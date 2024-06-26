@@ -1,0 +1,266 @@
+@media (min-width:320px) and (max-width:700px) {
+    /* burger menu */
+    .burger-menu{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        transition: 0.3s ease;
+        
+    }
+    .burger-menu::before,
+    .burger-menu::after {
+        content:"";
+        background-color:red;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        transition: 0.3s ease;
+    }
+    .burger-menu::before {
+        top: 0;
+    }
+    .burger-menu::after {
+        bottom: 0;
+    }
+    .burger-menu span {
+        background-color: red;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 10px;
+        z-index: 3;
+    }
+
+    /* main menu */
+    .main-nav {
+       position: absolute;
+       top: 0;
+       left: 0;
+       right: 0;
+       width: 25vw;
+       height: 25vw;
+       background-color: black;
+       border: 1px solid red;
+       padding: 20px 10px; 
+       transform: translateX(-100%);
+    }
+    .nav-list {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px !important;
+    }
+    /* active */
+    .burger-menu.active {
+        z-index: 3;
+        transform: translateX(0);
+        transition: 0.3s ease;
+    }
+
+    .burger-menu.active::before {
+        transform: rotate(45deg);
+        top: 10px;
+        transition: 0.3s ease;
+    }
+    .burger-menu.active::after{
+        transform: rotate(-45deg);
+        top: 10px;
+        transition: 0.3s ease;
+    }
+    .burger-menu.active span {
+        transform: scale(0);
+    }
+    .main-nav.active {
+        transform: translate(0);
+        transition: 0.3s ease;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    body{
+        margin: 0px;
+        background-image: url(img/Background.png);
+        background-size: contain;
+        background-repeat: inherit;
+        position: static;
+    }
+    .header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 80px;
+        padding: 0 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        z-index: 1;
+    }
+    .logo {
+        color: red;
+        font-size: 30px;
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+    .nav-list a {
+        font-weight: 700;
+        font-size: 18px;
+        color: red;
+        text-decoration: none;
+    }
+    .valo {
+        color: red;
+        font-size: 11px;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .wrap-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5% 3.5%;
+        gap: 15%;
+    }
+    .defi {
+        color: #FFF;
+        text-align: center;
+        font-family: Alata;
+        font-size: 12px;
+        margin-top: 70px;
+    }
+    .info {
+        color: #FFF;
+        text-align: center;
+        font-family: Alata;
+        font-size: 12px;
+        margin-top: 70px;
+    }
+    .divider {
+        height: 100px;
+    }
+    #rifle-list {
+        align-items: center;
+    }
+    .container {
+        display: flex;
+    }
+    img {
+        transform: scale(50%);
+        margin-left: -50%;
+        margin-top: -15%;
+    }
+    .bulldog {
+        width: 315px;
+        height: 100px;
+        display: flex;
+        margin: 50px 25px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .bulldog-stats {
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: -130px;
+        margin-top: -0px;
+    }
+    .guardian {
+        width: 315px;
+        height: 100px;
+        display: flex;
+        margin: 50px 25px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .guardian-stats {
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: -130px;
+        margin-top: -0px;
+    }
+    .phantom {
+        width: 315px;
+        height: 100px;
+        display: flex;
+        margin: 50px 25px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .phantom-stats {
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: -130px;
+        margin-top: -0px;
+    }
+    .vandal {
+        width: 315px;
+        height: 100px;
+        display: flex;
+        margin: 50px 25px;
+        background-color: red;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    .vandal-stats {
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        width: 150px;
+        margin-left: -130px;
+        margin-top: -0px;
+    }
+    .wrap-footer {
+        background-color: black;
+        height: 150px;
+    }
+    .trademark {
+        color: red;
+        font-size: 7px;
+    }
+    .closing {
+        color: red;
+        text-align: center;
+        font-size: 50%;
+    }
+    .Contacts {
+        color: red;
+        text-align: right;
+        padding-right: 7px;
+        font-size: 50%;
+    }
+    .form {
+        text-decoration: underline;
+        color: black;
+        display: flex;
+        font-size: 14px;
+        text-align: center;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_footer {
+        padding:1% 2%;
+        color: red;
+        font-size: 15px;
+    }
+}
