@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 5% 10%;
+    font: 16px 'Montserrat', sant-serif;
+    color: red;
+    background-color:#0F1722;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.wrapper__title {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.user input {
+    padding: 5px;
+    border: 1px solid red;
+    background: inherit;
+    border-radius: 5px;
+    font: inherit;
+    width: 100%;
+    color: white;
+}
+.user {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.user-info {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.select textarea {
+    background: inherit;
+    font: inherit;
+    color: white;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+label {
+    font-size: 24px;
+}
+button {
+    background-color: red;
+    border: 1px solid red;
+}
+button:hover { 
+    background-color: #850000; 
+    border-style: dashed; 
+    transform: translateY(-5px); 
+} 
